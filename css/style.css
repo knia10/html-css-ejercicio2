@@ -1,0 +1,82 @@
+body{ /* quitarle los bordes */
+    margin: 0;
+    padding: 0;
+}
+
+main{  /* quitarle los bordes */
+    margin: 0;
+    padding: 0;
+}
+
+.contain{   /* que tendra el contenedor */
+    width: 100%; /* ancho */
+      height: 60vh; /* alto */
+      background-color: cornflowerblue;
+      border-top: 80px solid palevioletred;
+}
+
+.box{
+    display: flex; /* contenedor flexible para que esten al mismo nivel */
+    flex-direction: row; /* la direccion sera en fila */
+    justify-content: center;
+    margin-top: -50px; /* aplica el margen (-) a la fila para elevarlo sobre el borde */
+}
+
+.col:nth-child(1){ /* asignacion a cada imagen por ser la misma clase *//* lo que contiene la columna con la imagen */
+   width: 20%;
+   background-image: url('https://i.pinimg.com/236x/11/db/27/11db27033885c1c7a6376cbccf67b7a5.jpg'); /* imagen de fondo */
+   background-position: center;   /* posiciona la imagen */ 
+   background-size: 100% 100%;  /* ajusta el tamaño de la img en el cont, ancho y alto */ 
+   height: 40vh; /* alto de cada imagen */ 
+   margin: 20px; /* margen de cada imagen */
+   border-radius: 10px 10px 0px 0px; /* que el borde de arriba sea redondeado y los de abajo no  */
+
+}
+
+.col:nth-child(2){ 
+    width: 20%;
+    background-image: url('https://i.pinimg.com/236x/ee/f7/ea/eef7eac8997463478d6333e7fdf70fd9.jpg'); 
+    background-position: center;
+    background-size: 100% 100%;
+    height: 40vh; 
+    margin: 20px; 
+    border-radius: 10px 10px 0px 0px; 
+ 
+ }
+
+ .col:nth-child(3){ 
+    width: 20%;
+    background-image: url('https://i.pinimg.com/236x/8c/99/ea/8c99eab436991002f08ed48a45da31d6.jpg'); 
+    background-position: center;
+    background-size: 100% 100%;
+    height: 40vh; 
+    margin: 20px; 
+    border-radius: 10px 10px 0px 0px; 
+ 
+ }
+
+ .col h2{
+     background-color: rgba(17, 196, 166, 0.5);/*opacidad del fondo de las letras*/
+      color: salmon; /* Color de letra */
+      font-family: monospace; /*tipo de letra*/
+      font-size:  1.5rem; /*grosor de letra*/
+    }
+
+ .col button{ /*Propiedades del boton*/
+     width: 100%;
+     border: none; 
+     font-family: monospace;
+     font-size: 1.5rem;
+     background-color: rgb(55, 168, 140);
+     color: salmon;
+     padding-top: 15px; /*tamaño*/
+     padding-bottom: 8px;
+     margin-top: 170px; /*posicion*/
+    }
+
+    .col button:hover{ /*al pasar el mouse hace algo*/
+       background-color: salmon;
+       color: rgb(55, 168, 140);
+       cursor: pointer;
+    }
+
